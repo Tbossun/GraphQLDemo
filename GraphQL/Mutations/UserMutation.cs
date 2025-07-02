@@ -10,7 +10,7 @@ namespace GraphQLDemo.GraphQL.Mutations
 {
     public class UserMutation
     {
-        public async Task<User> AddUser(
+        public async Task<User> CreateUser(
             UserInput input,
             [Service] IDbContextFactory<AppDbContext> dbContextFactory,
             [Service] IValidator<UserInput> validator)
